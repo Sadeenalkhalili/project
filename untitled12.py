@@ -157,7 +157,7 @@ plt.title('Passed or Not by Gender')
 plt.show()
 
 import requests
-get_result = requests.get("https://github.com/Sadeenalkhalili/project/blob/main/untitled12.py")
+get_result = requests.get("https://raw.githubusercontent.com/Sadeenalkhalili/project/refs/heads/main/untitled12.py")
 if get_result:
     print(get_result.status_code)
     print(get_result.url)
