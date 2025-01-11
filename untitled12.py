@@ -11,7 +11,7 @@ import pandas as pd
 import json
 from sklearn.preprocessing import LabelEncoder,Binarizer,MinMaxScaler,StandardScaler,normalize
 
-d=pd.read_csv('StudentsPerformance.csv')
+d=pd.read_csv('StudentsPerformance (1).csv')
 
 print(d)
 
@@ -45,7 +45,7 @@ def add_students_from_json(json_file_path, df):
         print("Error: The JSON file is not properly formatted.")
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
-df=add_students_from_json('/content/students.json', df)
+df=add_students_from_json('students.json', df)
 print(df)
 
 print(df.dtypes)
@@ -157,7 +157,7 @@ plt.title('Passed or Not by Gender')
 plt.show()
 
 import requests
-get_result = requests.get("https://raw.githubusercontent.com/Sadeenalkhalili/project/refs/heads/main/pr.py")
+get_result = requests.get("https://github.com/Sadeenalkhalili/project/blob/main/untitled12.py")
 if get_result:
     print(get_result.status_code)
     print(get_result.url)
